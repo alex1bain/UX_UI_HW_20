@@ -1,0 +1,295 @@
+.header {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+
+body {
+  background-color: #132032;
+  background-size: cover;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  margin:8px;
+  line-height: 1.5;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  margin:auto;
+}
+
+.imageborder img {
+  width:100%;
+  max-width: 500px;
+  height: 100%;
+  border-radius: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.imageborder {
+  text-align:center;
+}
+
+.title {
+  margin-top: 30px;
+  font-family: 'Playfair Display', serif;
+  max-width: 200px;
+  border-bottom:thin #9FAFFF solid;
+  padding-bottom: 5px;
+  font-family: "Playfair Display";
+}
+
+.biography {
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.biography p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+
+.content {
+  display:flex;
+  justify-content: space-around;
+}
+
+.downloadButton button {
+  background-image: linear-gradient(to bottom right, #9FAFFF, #6C7BCC); 
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skillsColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "column1 column2 column3";
+  justify-content: space-evenly;
+}
+
+.row {
+  grid-area: row;
+}
+
+.column1 {
+  grid-area: column1;
+  margin:auto;
+}
+
+.column2 {
+  grid-area: column2;
+  margin:auto;
+}
+
+.column3 {
+  grid-area: column3;
+  margin:auto;
+}
+
+
+nav {
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+  background:#9FAFFF;
+}
+
+
+
+nav p {
+  color: white;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo img {
+  height: auto;
+  max-width: 56px;
+}
+
+.myworkheader {
+  position: relative;
+  top: 100px;
+  margin: 0px;
+}
+
+
+.casestudy {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 0px 50px 0px;
+
+}
+
+.cssummary {
+  width: 40%;
+  font-size: 18px;
+  margin: 0 auto 20px auto;
+}
+
+.cssummary p {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.cssummary li {
+  padding-bottom: 6px;
+  font-size: 14px;
+  color: #B5B5B5;
+}
+
+.csimage {
+  width: 60% ;
+}
+
+.csimage img {
+  width: 50%;
+  height: auto;
+}
+
+.csbutton {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cslink {
+  background-image: linear-gradient(to bottom right, #9FAFFF, #6C7BCC); 
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 6px;
+  
+}
+
+.cslink:hover, .downloadButton button:hover {
+  background-image: linear-gradient(to bottom right, #6C7BCC, #9FAFFF); 
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer p {
+  font-size: 20px;
+  color: white;
+}
+
+.footerLinks {
+}
+
+.footerBar {
+background-color: #9FAFFF;
+;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+}
+
+.sm ul {
+  display: flex;
+}
+
+.sm ul li {
+padding-right: 20px;
+}
+
+html, body, .mainContainer {
+  height: 100%;
+}
+
+.navigationLinks {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navigationLinks a,.navigationLinks a:active,.navigationLinks a:visited {
+  color:#fff;
+  text-decoration:none;
+}
+
+.navigationLinks p {
+  margin: .8em 10px 1em 0em
+}
+
+.logo {
+  padding-right: 20px;
+  display:flex;
+  height: 40px;
+  align-items: center;
+}
+
+.logo h1 {
+  margin:0 0 0 22px;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+
+li{
+  
+}
+
+.navigation {
+  width: 73%;
+  overflow: hidden;
+  height: 70px;
+  line-height: 70px;
+  background: #333;
+  padding: 1%;
+}
+
+ul {
+  margin-left: auto;
+  font-size: medium;
+  padding:0;
+  list-style:none;
+}
+
+
+.hamburgerIcon {
+  display: none;
+}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+@media (max-width: 600px){
+.navigationLinks p {
+  display: none;
+}
+
+.content, .casestudy {
+  flex-direction: column;
+}
+
+.hamburgerIcon {
+  display: flex;
+}
+
+}
